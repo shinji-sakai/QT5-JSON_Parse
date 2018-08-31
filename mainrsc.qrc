@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>qml/Title.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>images/bringdown.png</file>
+        <file>images/bringup.png</file>
+        <file>images/filter.png</file>
+        <file>images/new.png</file>
+        <file>images/sortasc.png</file>
+        <file>images/sortdesc.png</file>
+        <file>qml/TreeViewer.qml</file>
+        <file>qml/JSONNode.qml</file>
+        <file>qml/JSONField.qml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPlainTextEdit {
+	background-color: transparent;
+	border-width: 2px solid orange;
+	border-radius: 10px;
+	color: white;
+	selection-background-color: wheat;
+	selection-color: #ffffff;
+	font-size: 18px;
+	padding: 5px;
+}
+QScrollBar:vertical {
+	border-radius: 5px;
+	background: #3f666666;
+	width: 16px;
+	margin: 20px 6px 20px 0px;
+}
+QScrollBar::handle:vertical {
+	border-radius: 5px;
+	background: #7f666666;
+	min-height: 20px;
+}
+QScrollBar::add-line:vertical {
+	background: transparent;
+	height: 12px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+	margin-right: 6px;
+	margin-bottom: 5px;
+}
+QScrollBar::sub-line:vertical {
+	background: transparent;
+	height: 12px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+	margin-right: 6px;
+	margin-top: 5px;
+}
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	border-radius: 5px;
+	width: 10px;
+	height: 10px;
+	background: gray;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QQuickWidget" name="quickWidget">
+     <property name="resizeMode">
+      <enum>QQuickWidget::SizeRootObjectToView</enum>
+     </property>
+     <property name="source">
+      <url>
+       <string>qrc:/main.qml</string>
+      </url>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QQuickWidget</class>
+   <extends>QWidget</extends>
+   <header>QtQuickWidgets/QQuickWidget</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
